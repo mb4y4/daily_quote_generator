@@ -32,6 +32,8 @@ You can choose categories, save your favorite quotes, and view them in a collaps
 3. Open `index.html` in your browser. ✅
   - No build tools or frameworks needed.
 
+---
+
 ## 📝 To-Do / Improvements
 
 - Add a Remove from Favourites button
