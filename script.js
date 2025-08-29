@@ -86,6 +86,16 @@ favoriteBtn.addEventListener("click", () => {
 newQuoteBtn.addEventListener("click", getQuote);
 categorySelect.addEventListener("change", getQuote);
 
+// Toggle Favorites Collapsible
+const toggleBtn = document.getElementById("toggle-favorites");
+const favoritesContainer = document.getElementById("favorites-container");
+const toggleIcon = document.getElementById("toggle-icon");
+
+toggleBtn.addEventListener("click", () => {
+  favoritesContainer.classList.toggle("hidden");
+  toggleIcon.textContent = favoritesContainer.classList.contains("hidden") ? "▼" : "▲";
+});
+
 // Initialize
 renderFavorites();
 getQuote();

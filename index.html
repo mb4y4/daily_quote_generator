@@ -32,12 +32,15 @@
       <button id="favorite-quote" class="bg-pink-500 text-white px-4 py-2 rounded-xl shadow hover:bg-pink-600 transition">❤️ Favorite</button>
     </div>
 
-    <!-- Favorites -->
+    <!-- Favorites Collapsible -->
     <div>
-      <h2 class="text-xl font-semibold mb-2 text-gray-800">⭐ Your Favorites</h2>
-      <ul id="favorites-list" class="list-disc list-inside text-gray-700 space-y-2">
-        <!-- Filled dynamically -->
-      </ul>
+      <button id="toggle-favorites" class="w-full text-left bg-gray-200 px-4 py-2 rounded-lg font-semibold flex justify-between items-center hover:bg-gray-300 transition">
+        ⭐ Your Favorites
+        <span id="toggle-icon">▼</span>
+      </button>
+      <div id="favorites-container" class="mt-2 hidden">
+        <ul id="favorites-list" class="list-disc list-inside text-gray-700 space-y-2"></ul>
+      </div>
     </div>
   </div>
 
