@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Quote Generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-h-screen flex items-center justify-center p-6">
+  <div class="bg-white shadow-2xl rounded-2xl p-8 max-w-lg w-full">
+    <h1 class="text-3xl font-bold text-center mb-6 text-gray-800">✨ Daily Quote Generator</h1>
+
+    <!-- Category Selection -->
+    <div class="mb-4">
+      <label for="category-select" class="block text-sm font-medium text-gray-700 mb-1">Choose a category:</label>
+      <select id="category-select" class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-indigo-400">
+        <option value="motivation">💡 Motivation</option>
+        <option value="tech">💻 Tech</option>
+        <option value="humor">😂 Humor</option>
+      </select>
+    </div>
+
+    <!-- Quote Display -->
+    <div class="bg-gray-100 p-6 rounded-xl shadow-inner mb-6 text-center">
+      <p id="quote-text" class="text-lg italic text-gray-800 mb-4">Loading quote...</p>
+      <p id="quote-author" class="text-md font-semibold text-gray-600"></p>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex justify-center gap-4 mb-6">
+      <button id="new-quote" class="bg-indigo-500 text-white px-4 py-2 rounded-xl shadow hover:bg-indigo-600 transition">New Quote</button>
+      <button id="favorite-quote" class="bg-pink-500 text-white px-4 py-2 rounded-xl shadow hover:bg-pink-600 transition">❤️ Favorite</button>
+    </div>
+
+    <!-- Favorites -->
+    <div>
+      <h2 class="text-xl font-semibold mb-2 text-gray-800">⭐ Your Favorites</h2>
+      <ul id="favorites-list" class="list-disc list-inside text-gray-700 space-y-2">
+        <!-- Filled dynamically -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
