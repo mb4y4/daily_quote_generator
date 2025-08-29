@@ -30,7 +30,7 @@ You can choose categories, save your favorite quotes, and view them in a collaps
    ```bash
    cd daily-quote-generator
 3. Open `index.html` in your browser. ✅
-  No build tools or frameworks needed.
+  - No build tools or frameworks needed.
 
 ##📝 To-Do / Improvements
 
